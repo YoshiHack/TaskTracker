@@ -1,6 +1,25 @@
-<p>Welcome, <span id="result"></span>!</p>
-<script>
-  const params = new URLSearchParams(window.location.search);
-  document.getElementById('result').textContent = params.get('username');
-</script>
-k hm
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task Tracker</title>
+    </head>
+    <body>
+        <h1>Your tasks</h1>
+        <script>
+          const params = new URLSearchParams(window.location.search);
+          document.getElementById('datetime').textContent = params.get('datetime');
+        </script>
+
+         <script>
+          const params = new URLSearchParams(window.location.search);
+          document.getElementById('title').textContent = params.get('title');
+        </script>
+
+         <script>
+          const params = new URLSearchParams(window.location.search);
+          document.getElementById('paragraph').textContent = params.get('paragraph');
+        </script>
+        <h1 id="title"></h1> 
+        <h6 id="datetime"></h6>
+        <p id="paragraph"></p>
+    </body>
